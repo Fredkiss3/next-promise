@@ -6,7 +6,7 @@ export function ClientComponent({ promise }: { promise: Promise<number> }) {
   return (
     <div>
       <h1>Your lucky number is : {resolvedValue}</h1>
-      <a href="/">Refresh</a>
+      <a href="/">Get another one</a>
     </div>
   );
 }
