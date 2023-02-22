@@ -1,5 +1,4 @@
 'use client';
-import { useRouter } from 'next/navigation';
 import { use } from 'react';
 
 export function ClientComponent({ promise }: { promise: Promise<number> }) {
@@ -7,7 +6,7 @@ export function ClientComponent({ promise }: { promise: Promise<number> }) {
   return (
     <div>
       <h1>Your lucky number is : {resolvedValue}</h1>
-      <button>Get another random number</button>
+      <a href="/">Refresh</a>
     </div>
   );
 }
